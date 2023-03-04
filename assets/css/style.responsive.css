@@ -1,0 +1,128 @@
+@media screen and (max-width:350px){
+    body{
+        /* background:red; */
+    }
+    .home{
+        height: 50vh;
+    }
+    .home__wrapper__video video{
+        height:100%;
+        width: auto !important;
+    }
+    h2{
+        font-size:20px;
+    }
+    main h2::after{
+        font-size:30px;
+    }
+}
+@media screen and (min-width:351px) and (max-width:576px){
+    body{
+        /* background:orange; */
+    }
+    .home{
+        height: 50vh;
+    }
+    .home__wrapper__video video{
+        height:100%;
+        width: auto !important;
+    }
+    h2{
+        font-size:20px;
+    }
+     main h2::after{
+        font-size:30px;
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px){
+    body{
+        /* background:blue; */
+    }
+    .home{
+        height: 50vh;
+    }
+    .home__wrapper__video video{
+        height:100%;
+        width: auto !important;
+    }
+    h2{
+        font-size:20px;
+    }
+     main h2::after{
+        font-size:30px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:992px){
+    body{
+        /* background:green; */
+    }
+    h2{
+        font-size:20px;
+    }
+     main h2::after{
+        font-size:30px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .btn__toggler{
+        display: block!important;
+    }
+    .navbar-collapse{
+        transition: .3s ease-in;
+        animation: transform .5s linear;
+        background: rgba(0,0,0,.8);
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-top: 15%;
+        height:100vh;
+        width: 100vw;
+    }
+    .navbar-nav{
+        width: 80%;
+        margin: auto;
+        padding-top: 2rem;
+    }
+    @keyframes transform {
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+    @keyframes transform__back {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+    .navbar-collapse .nav-item{
+        overflow: hidden;
+        margin: .2rem 0;
+    }
+    .navbar-collapse .nav-link{
+        color: #fff ;
+        transform: translateY(-100%);
+        animation: transformY var(--i) .5s forwards;
+    }
+
+    @keyframes transformY {
+        0%{
+            opacity:0;
+            transform: translateY(30px);
+        }
+        100%{
+            opacity: 1 !important;;
+            transform: translateY(0px);
+        }
+    }
+
+    .home h1{
+        font-size:25px;
+    }
+}
